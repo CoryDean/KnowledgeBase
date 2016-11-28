@@ -1,0 +1,12 @@
+Source: http://stackoverflow.com/questions/23959337/php-compile-time-vs-run-time-understanding-the-difference
+
+PHP makes two passes (by default) anytime it runs a file.
+
+Pass #1 parses the file and builds what is called operational(or machine) code. This is the raw binary format
+your computer will actually run and it is not human readable. In other languages (like C++, etc) this is called
+compiling. You can cache this step using various systems like Opcache, which saves you the overhead of compiling
+this every time.
+
+Syntax errors come from this portion of the execution.
+
+Pass #2 is Run Time.

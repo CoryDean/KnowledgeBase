@@ -1,0 +1,11 @@
+Source: http://stackoverflow.com/questions/23959337/php-compile-time-vs-run-time-understanding-the-difference
+
+PHP makes two passes (by default) anytime it runs a file.
+
+Pass #1 is Compile Time.
+
+Pass #2 executes the operational code from Pass #1. This is what is commonly called "run time", because your
+computer is actually executing the instructions.
+
+Run-time errors (like exhausting memory, abnormal termination, etc) come from this level. These are considerably
+less common than syntax errors, however.

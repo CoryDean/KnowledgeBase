@@ -1,0 +1,7 @@
+Source: http://php.net/manual/en/language.oop5.late-static-bindings.php
+
+As of PHP 5.3.0, PHP implements a feature called late static binding which can be used to reference the called class
+in the context of static inheritance.
+
+Late static binding tries to solve that limitation by introducing a keyword that references the class that was
+initially called at runtime.
